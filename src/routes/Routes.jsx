@@ -1,10 +1,9 @@
 import React, { Suspense, lazy, useEffect } from "react";
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import Preloader from "../components/Preloader/Preloader";
 
-import HomePage from "../pages/HomePage/HomePage";
-const AboutPage = lazy(() => import("../pages/AboutPage/AboutPage"));
+import LoginPage from "../pages/Auth/Login/Login";
+const RegistrationPage = lazy(() => import("../pages/Auth/Registration/Registration"));
 const NotFound = lazy(() => import("../pages/NotFound/NotFound"));
 
 const RoutePagesComponent = ({ history, location }) => {
@@ -20,11 +19,11 @@ const RoutePagesComponent = ({ history, location }) => {
 	}, []);
 
 	return (
-		<Suspense fallback={<Preloader/>}>
+		<Suspense fallback={"Loading..."}>
 			<AnimatePresence exitBeforeEnter>
 				<Switch location={location} key={location.pathname}>
-					<Route exact path="/" component={HomePage} />
-					<Route exact path="/about" component={AboutPage} />
+					<Route exact path="/" component={LoginPage} />
+					<Route exact path="/register" component={RegistrationPage} />
 
 					<Route component={NotFound} />
 				</Switch>

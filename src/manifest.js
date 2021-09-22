@@ -1,8 +1,8 @@
 const _manifest = {
-    title: "React Starter App",
+    title: "React App",
     description: "An app to start react coding with deployment, transition, seo features",
     keywords: "Starter app for react",
-    author: "Abdullah Al Mamun",
+    author: "",
     apiBaseUrl: "",
 };
   

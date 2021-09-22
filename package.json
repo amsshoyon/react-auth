@@ -1,17 +1,15 @@
 {
-  "name": "react-starter-app",
+  "name": "react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
-    "animate.css": "^4.1.1",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.2",
     "classnames": "^2.3.1",
-    "font-awesome": "^4.7.0",
     "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
+    "material-react-toastify": "^1.0.1",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
     "moment": "^2.29.1",
@@ -22,8 +20,6 @@
     "react-lottie": "^1.2.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-slick": "^0.28.1",
-    "slick-carousel": "^1.8.1",
     "sweetalert": "^2.1.2",
     "yup": "^0.32.9"
   },
