@@ -51,7 +51,7 @@ const RegistrationForm = () => {
                         <Field type="password" name="password" component={TextField} variant="outlined" label="Password" error={touched.password && errors.password}/>
                     </FormGroup>
 
-                    <Grid contsiner direction="row" justifyContent="space-between" alignItems="center"  style={{ display: 'flex' }}>
+                    <Grid contsiner direction="row" justifyContent="space-between" alignItems="center"  style={{ display: 'flex', flexWrap: "wrap" }}>
                         <Button type="submit" variant="contained" color="primary"> Registration </Button>
                         <p>Already registered? <Link to="/">Login</Link></p>
                     </Grid>
@@ -68,7 +68,7 @@ const Registration = () => {
     return (
         <div className="my-5 pt-5">
             <Grid container  direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={4}>
+                <Grid item lg={4} sm={8} xs={10}>
                     <Card>
                         <RegistrationForm />
                     </Card>

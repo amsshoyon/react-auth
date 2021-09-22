@@ -41,7 +41,7 @@ const LoginForm = () => {
                         <Field type="password" name="password" component={TextField} variant="outlined" label="Password" error={touched.password && errors.password}/>
                     </FormGroup>
 
-                    <Grid contsiner direction="row" justifyContent="space-between" alignItems="center"  style={{ display: 'flex' }}>
+                    <Grid contsiner direction="row" justifyContent="space-between" alignItems="center"  style={{ display: 'flex', flexWrap: "wrap" }}>
                         <Button type="submit" variant="contained" color="primary"> Login </Button>
                         <p>Not registered? <Link to="/register">Register</Link></p>
                     </Grid>
@@ -57,7 +57,7 @@ const Login = ()=> {
     return (
         <div className="my-5 pt-5">
             <Grid container  direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={4}>
+                <Grid item lg={4} sm={8} xs={10}>
                     <Card>
                         <LoginForm />
                     </Card>
