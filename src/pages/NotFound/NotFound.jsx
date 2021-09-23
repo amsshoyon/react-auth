@@ -5,7 +5,7 @@ import "./NotFound.scss";
 const NotFound = () => {
 	return (
 		<FadeTransition>
-            <div className="vw-100 vh-100 d-flex justify-content-center align-items-center">
+            <div className="notFound">
                 <h1>404 Not Found</h1>
             </div>
         </FadeTransition>

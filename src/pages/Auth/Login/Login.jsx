@@ -32,7 +32,7 @@ const LoginForm = () => {
         >
             {({ errors, touched }) => (
                 <Form autocomplete="off" className="p-4">
-                    <h3>Login</h3>
+                    <h4 className="mb-4">Login</h4>
                     <FormGroup className="mb-3">
                         <Field name="email" component={TextField} variant="outlined" label="Email Address" error={touched.email && errors.email} />
                     </FormGroup>
@@ -41,7 +41,7 @@ const LoginForm = () => {
                         <Field type="password" name="password" component={TextField} variant="outlined" label="Password" error={touched.password && errors.password}/>
                     </FormGroup>
 
-                    <Grid contsiner direction="row" justifyContent="space-between" alignItems="center"  style={{ display: 'flex', flexWrap: "wrap" }}>
+                    <Grid container direction="row" justifyContent="space-between" alignItems="center"  style={{ display: 'flex', flexWrap: "wrap" }}>
                         <Button type="submit" variant="contained" color="primary"> Login </Button>
                         <p>Not registered? <Link to="/register">Register</Link></p>
                     </Grid>

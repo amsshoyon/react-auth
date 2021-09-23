@@ -5,15 +5,12 @@ export default function FadeTransition({children, className, initial, animate, e
     const pageVariants = {
         animate: {
             opacity: 1,
-            y: 0
         },
         in: {
             opacity: 0,
-            y: "10%"
         },
         out: {
             opacity: 0,
-            y: "-10%"
         }
     }
     

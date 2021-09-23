@@ -36,7 +36,7 @@ const RegistrationForm = () => {
         >
             {({ errors, touched }) => (
                 <Form autocomplete="off" className="p-4">
-                    <h3>Registration</h3>
+                    <h4 className="mb-4">Registration</h4>
                     <FormGroup className="mb-3">
                         <Field name="firstname" component={TextField} variant="outlined" label="First Name" error={touched.firstname && errors.firstname} />
                     </FormGroup>

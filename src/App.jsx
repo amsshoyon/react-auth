@@ -5,10 +5,11 @@ import Routes from "./routes/Routes";
 import Manifest from "./manifest";
 
 // Node plugins
-// import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/scss/bootstrap.scss';
 
 // Theme styles
 import "./styles/style.scss";
+import Header from "./components/Header/Header";
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
 				<meta name="keywords" content={Manifest.keywords} />
 				<meta name="author" content={Manifest.author} />
             </Helmet>
+			<Header />
 			<main className="main">
 				<Routes />
 			</main>
